@@ -1,0 +1,10 @@
+{
+  "id": "com.workoutbuddy.tv",
+  "version": "1.0.0",
+  "vendor": "WorkoutBuddy",
+  "type": "web",
+  "main": "index.html",
+  "title": "Workout Buddy",
+  "icon": "icon.svg",
+  "resolution": "1920x1080"
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10151c">
+    <title>Workout Buddy</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Workout Buddy home">
+          <span class="brand-mark" aria-hidden="true">WB</span>
+          <span>WORKOUT <strong>BUDDY</strong></span>
+        </a>
+        <div class="topbar-meta">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span>READY WHEN YOU ARE</span>
+        </div>
+      </header>
+
+      <section class="hero" aria-labelledby="welcome-title">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR LIVING ROOM. YOUR TRAINING GROUND.</p>
+          <h1 id="welcome-title">Make today<br>count<span>.</span></h1>
+          <p class="hero-description">Pick a session, find your rhythm, and feel good doing it.</p>
+          <div class="remote-hint">
+            <span class="keycap">←</span><span class="keycap">→</span>
+            <span>to browse</span>
+            <span class="keycap enter-key">OK</span>
+            <span>to select</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="hero-number">01</div>
+          <div class="hero-badge"><span>MOVE</span><strong>YOUR WAY</strong></div>
+          <div class="hero-spark spark-one">✳</div>
+          <div class="hero-spark spark-two">✦</div>
+        </div>
+      </section>
+
+      <section class="workouts" aria-labelledby="workouts-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">START WITH A SESSION</p>
+            <h2 id="workouts-title">Choose your workout</h2>
+          </div>
+          <p class="session-count"><span id="workout-count">04</span> SESSIONS</p>
+        </div>
+        <div class="workout-grid" id="workout-grid" aria-label="Workout sessions"></div>
+      </section>
+
+      <footer class="footer">
+        <span>SMALL STEPS. STRONGER DAYS.</span>
+        <span>WORKOUT BUDDY <span class="footer-dot">•</span> 01</span>
+      </footer>
+    </main>
+
+    <dialog class="session-dialog" id="session-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close workout details">×</button>
+      <p class="eyebrow" id="dialog-category">YOUR NEXT SESSION</p>
+      <h2 id="dialog-title">Workout</h2>
+      <p class="dialog-description" id="dialog-description"></p>
+      <div class="dialog-meta">
+        <span id="dialog-duration"></span>
+        <span id="dialog-level"></span>
+      </div>
+      <p class="session-timer" id="session-timer" role="status" aria-live="polite" hidden></p>
+      <button class="start-button" type="button" id="start-button">Start session <span aria-hidden="true">→</span></button>
+      <p class="dialog-note" id="dialog-note">Take it at your own pace. You’ve got this.</p>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
